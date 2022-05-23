@@ -11,3 +11,6 @@ Este repositorio almacena la Implementación de plantilla con Primefaces
 
 # PrimeStore
 [Tienda de Primefaces](https://www.primefaces.org/store/)
+
+# Referencias
+[Video de referencia](https://www.youtube.com/watch?v=MrrIwFc36r4&t=237s)
