@@ -1,0 +1,1346 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:fn="http://java.sun.com/jsp/jstl/functions">
+
+    <h:head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <link type="text/css" rel="stylesheet" href="#{request.contextPath}/faces/resources/theme.css" />
+        <link type="text/css" rel="stylesheet" href="#{request.contextPath}/faces/resources/primeicons/primeicons.css" />
+        <link type="text/css" rel="stylesheet" href="#{request.contextPath}/faces/resources/fa/font-awesome.css" />
+        <link type="text/css" rel="stylesheet" href="#{request.contextPath}/faces/resources/components.css" />
+        <script type="text/javascript" src="#{request.contextPath}/faces/resources/jquery/jquery.js"></script>
+        <script type="text/javascript" src="#{request.contextPath}/faces/resources/core.js"></script>
+        <script type="text/javascript" src="#{request.contextPath}/faces/resources/components.js"></script>
+        <script type="text/javascript" src="#{request.contextPath}/faces/resources/jquery/jquery-plugins.js"></script>
+        <link type="text/css" rel="stylesheet" href="#{request.contextPath}/faces/resources/inputswitch/inputswitch.css" />
+        <script type="text/javascript" src="#{request.contextPath}/faces/resources/inputswitch/inputswitch.js"></script>
+        <link type="text/css" rel="stylesheet" href="#{request.contextPath}/faces/resources/css/primeflex.min.css" />
+        <link type="text/css" rel="stylesheet" href="#{request.contextPath}/faces/resources/css/primeicons.css" />
+        <link type="text/css" rel="stylesheet" href="#{request.contextPath}/faces/resources/css/demo-light.css" />
+        <link type="text/css" rel="stylesheet" href="#{request.contextPath}/faces/resources/css/layout-light.css" />
+        <title>Empty Page</title>
+        <script type="text/javascript" src="#{request.contextPath}/faces/resources/js/layout.js"></script>
+        <script type="text/javascript" src="#{request.contextPath}/faces/resources/js/prism.js"></script>
+    </h:head>
+
+   <h:body class="main-body">
+
+
+        <div
+            class="layout-wrapper layout-topbar-light layout-static-active layout-menu-dim  layout-static layout-static-active ">
+
+            <div class="layout-topbar">
+                <div class="layout-topbar-wrapper">
+                    <div class="layout-topbar-left"><a id="logolink" name="logolink" href="dashboard.html"
+                                                       class="layout-topbar-logo"><img id="j_idt12"
+                                                        src="#{request.contextPath}/faces/resources/images/logo-poseidon.png" alt="" /></a>
+                    </div>
+                    <div class="layout-topbar-right">
+                        <a href="#" class="menu-button">
+                            <i class="pi pi-bars"></i>
+                        </a>
+                        <ul class="layout-topbar-actions">
+                            <li class="search-item topbar-item">
+                                <a href="#">
+                                    <span class="topbar-icon">
+                                        <i class="pi pi-search"></i>
+                                    </span>
+                                </a>
+                                <form id="j_idt14" name="j_idt14" method="post"
+                                      action="https://www.primefaces.org/poseidon/empty.xhtml"
+                                      enctype="application/x-www-form-urlencoded" onsubmit="return false;">
+                                    <input type="hidden" name="j_idt14" value="j_idt14" />
+                                    <span class="md-inputfield search-input-wrapper"><input id="j_idt14:j_idt16"
+                                                                                            name="j_idt14:j_idt16" type="text"
+                                                                                            class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all "
+                                                                                            placeholder="Search..." />
+                                        <script id="j_idt14:j_idt16_s"
+                                        type="text/javascript">$(function () { PrimeFaces.cw("InputText", "widget_j_idt14_j_idt16", { id: "j_idt14:j_idt16" }); });</script>
+                                        <i icon="fa fa-search"></i>
+                                    </span><input type="hidden" name="javax.faces.ViewState"
+                                                  id="j_id1:javax.faces.ViewState:0" value="-7500027867546551808:-5124627841032148127"
+                                                  autocomplete="off" />
+                                </form>
+                                <ul>
+                                    <form id="j_idt19" name="j_idt19" method="post"
+                                          action="https://www.primefaces.org/poseidon/empty.xhtml"
+                                          enctype="application/x-www-form-urlencoded" onsubmit="return false;">
+                                        <input type="hidden" name="j_idt19" value="j_idt19" />
+                                        <span class="md-inputfield search-input-wrapper"><input id="j_idt19:j_idt21"
+                                                                                                name="j_idt19:j_idt21" type="text"
+                                                                                                class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all "
+                                                                                                placeholder="Search..." />
+                                            <script id="j_idt19:j_idt21_s"
+                                            type="text/javascript">$(function () { PrimeFaces.cw("InputText", "widget_j_idt19_j_idt21", { id: "j_idt19:j_idt21" }); });</script>
+                                            <i class="fa fa-search"></i>
+                                        </span><input type="hidden" name="javax.faces.ViewState"
+                                                      id="j_id1:javax.faces.ViewState:1"
+                                                      value="-7500027867546551808:-5124627841032148127" autocomplete="off" />
+                                    </form>
+                                </ul>
+                            </li>
+                            <li class="topbar-item notifications">
+                                <a href="#">
+                                    <span class="">
+                                        <i class="pi pi-bell"></i>
+                                        <span class="ui-badge">2</span>
+                                    </span>
+                                </a>
+                                <ul>
+                                    <li class="layout-submenu-header">
+                                        <h6 class="header-text">Notifications</h6>
+                                        <span class="ui-badge">3</span>
+                                    </li>
+                                    <li>
+                                        <a tabindex="0">
+                                            <i class="fa fa-fw fa-edit"></i>
+                                            <div class="notifications-item">
+                                                <h6>Order <span>#2254</span> is placed</h6>
+                                                <span>Total Amount of <span>$34.50</span></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="0">
+                                            <i class="pi pi-clock"></i>
+                                            <div class="notifications-item">
+                                                <h6>Meeting with <span>AF04</span> Team</h6>
+                                                <span>Google Meets</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="0">
+                                            <i class="pi pi-th-large"></i>
+                                            <div class="notifications-item">
+                                                <h6>Task <span>#41</span> is complete</h6>
+                                                <span>9 Remaining Tasks</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="0">
+                                            <i class="pi pi-shopping-cart"></i>
+                                            <div class="notifications-item">
+                                                <h6>Order <span>#2255</span> is placed</h6>
+                                                <span>Total Amount of <span>$40.45</span></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="topbar-item messages">
+                                <a href="#">
+                                    <span class="ui-overlay-badge topbar-icon">
+                                        <i class="pi pi-comments"></i>
+                                        <span class="ui-badge">6</span>
+                                    </span>
+                                </a>
+                                <ul>
+                                    <li class="layout-submenu-header">
+                                        <h6 class="header-text">Messages</h6>
+                                        <span class="ui-badge">5</span>
+                                    </li>
+                                    <li>
+                                        <a tabindex="0"><img id="j_idt24"
+                                                             src="#{request.contextPath}/faces/resources/images/dashboard/leader-1.png"
+                                                             alt="" />
+                                            <div class="messages-item">
+                                                <h6>Hey! I sent the sales report</h6>
+                                                <span>Dusana Semenov</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="0"><img id="j_idt26"
+                                                             src="#{request.contextPath}/faces/resources/images/dashboard/leader-2.png"
+                                                             alt="" />
+                                            <div class="messages-item">
+                                                <h6>OK. Let’s meet at 15 pm...</h6>
+                                                <span>Edward Lindgren</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="0"><img id="j_idt28"
+                                                             src="#{request.contextPath}/faces/resources/images/dashboard/leader-3.png"
+                                                             alt="" />
+                                            <div class="messages-item">
+                                                <h6>Presentation is ready</h6>
+                                                <span>Noell Blue</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="0"><img id="j_idt30"
+                                                             src="#{request.contextPath}/faces/resources/images/dashboard/leader-4.png"
+                                                             alt="" />
+                                            <div class="messages-item">
+                                                <h6>Faulty delivery on #959</h6>
+                                                <span>Gvozden Boskovsky</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="topbar-item settings">
+                                <a href="#">
+                                    <span class="topbar-icon">
+                                        <i class="pi pi-cog"></i>
+                                    </span>
+                                </a>
+                                <ul>
+                                    <li class="layout-submenu-header">
+                                        <h6 class="header-text">Settings</h6>
+                                    </li>
+                                    <li>
+                                        <a tabindex="0">
+                                            <i class="pi pi-user"></i>
+                                            <div class="settings-item">
+                                                <h6>Account Info</h6>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="0">
+                                            <i class="pi pi-users"></i>
+                                            <div class="settings-item">
+                                                <h6>Global Accounts</h6>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="0">
+                                            <i class="pi pi-bell"></i>
+                                            <div class="settings-item">
+                                                <h6>Notification Preferences</h6>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="0">
+                                            <i class="pi pi-lock"></i>
+                                            <div class="settings-item">
+                                                <h6>Login Settings</h6>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="topbar-item user-profile">
+                                <a href="#"><img id="j_idt32"
+                                                 src="#{request.contextPath}/faces/resources/images/avatar-profile.png" alt="" />
+                                    <div class="profile-info">
+                                        <h6>Peter Taylor</h6>
+                                        <span>Webmaster</span>
+                                    </div>
+                                </a>
+                                <ul>
+                                    <li class="layout-submenu-header"><img id="j_idt34"
+                                                                           src="#{request.contextPath}/faces/resources/images/avatar-profile.png" alt="" />
+                                        <div class="profile-info">
+                                            <h6>Peter Taylor</h6>
+                                            <span>Webmaster</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="pi pi-cog"></i>
+                                            <h6>Setting</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="pi pi-file-o"></i>
+                                            <h6>Terms of Usage</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="pi pi-compass"></i>
+                                            <h6>Support</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="pi pi-power-off"></i>
+                                            <h6>Logout</h6>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="#" class="layout-rightpanel-button">
+                            <i class="pi pi-arrow-left"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menu-wrapper">
+                <div class="layout-menu-container">
+                    <form id="menuform" name="menuform" method="post"
+                          action="https://www.primefaces.org/poseidon/empty.xhtml"
+                          enctype="application/x-www-form-urlencoded">
+                        <input type="hidden" name="menuform" value="menuform" />
+                        <ul id="menuform:j_idt37" class="layout-menu">
+                            <li id="menuform:om_homepage" role="menuitem" class="layout-root-menuitem">
+                                <div><span class="layout-menuitem-text">Favorites</span></div><a href="#"><i
+                                        class="pi pi-home layout-menuitem-icon"></i><span
+                                        class="layout-menuitem-text">Favorites</span><i
+                                        class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a>
+                                <div class="layout-menu-tooltip">
+                                    <div class="layout-menu-tooltip-arrow"></div>
+                                    <div class="layout-menu-tooltip-text">Favorites</div>
+                                </div>
+                                <ul role="menu">
+                                    <li id="menuform:om_dashboard" role="menuitem"><a href="dashboard.html"><i
+                                                class="pi pi-home layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Dashboard</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Dashboard</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="menuform:om_components" role="menuitem" class="layout-root-menuitem">
+                                <div><span class="layout-menuitem-text">UI Kit</span></div><a href="#"><i
+                                        class="pi pi-star layout-menuitem-icon"></i><span class="layout-menuitem-text">UI
+                                        Kit</span><i class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a>
+                                <div class="layout-menu-tooltip">
+                                    <div class="layout-menu-tooltip-arrow"></div>
+                                    <div class="layout-menu-tooltip-text">UI Kit</div>
+                                </div>
+                                <ul role="menu">
+                                    <li id="menuform:om_formlayout" role="menuitem"><a href="formlayout.html"><i
+                                                class="pi pi-id-card layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Form Layout</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Form Layout</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_input" role="menuitem"><a href="input.html"><i
+                                                class="pi pi-check-square layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Input</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Input</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_floatlabel" role="menuitem"><a href="floatlabel.html"><i
+                                                class="pi pi-bookmark layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Float Label</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Float Label</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_invalidstate" role="menuitem"><a href="invalidstate.html"><i
+                                                class="pi pi-exclamation-circle layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Invalid State</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Invalid State</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_button" role="menuitem"><a class="rotated-icon"
+                                                                                   href="button.html"><i class="pi pi-mobile layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Button</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Button</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_table" role="menuitem"><a href="table.html"><i
+                                                class="pi pi-table layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Table</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Table</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_list" role="menuitem"><a href="list.html"><i
+                                                class="pi pi-list layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">List</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">List</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_tree" role="menuitem"><a href="tree.html"><i
+                                                class="pi pi-share-alt layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Tree</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Tree</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_panel" role="menuitem"><a href="panel.html"><i
+                                                class="pi pi-tablet layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Panel</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Panel</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_overlay" role="menuitem"><a href="overlay.html"><i
+                                                class="pi pi-clone layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Overlay</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Overlay</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_menu" role="menuitem"><a href="menu.html"><i
+                                                class="pi pi-bars layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Menu</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Menu</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_message" role="menuitem"><a href="messages.html"><i
+                                                class="pi pi-comment layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Message</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Message</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_file" role="menuitem"><a href="file.html"><i
+                                                class="pi pi-file layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">File</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">File</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_chart" role="menuitem"><a href="charts.html"><i
+                                                class="pi pi-chart-bar layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Chart</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Chart</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_misc" role="menuitem"><a href="misc.html"><i
+                                                class="pi pi-circle-off layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Misc</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Misc</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="Separator"></li>
+                            <li id="menuform:om_utils" role="menuitem" class="layout-root-menuitem">
+                                <div><span class="layout-menuitem-text">Utilities</span></div><a href="#"><i
+                                        class="pi pi-compass layout-menuitem-icon"></i><span
+                                        class="layout-menuitem-text">Utilities</span><i
+                                        class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a>
+                                <div class="layout-menu-tooltip">
+                                    <div class="layout-menu-tooltip-arrow"></div>
+                                    <div class="layout-menu-tooltip-text">Utilities</div>
+                                </div>
+                                <ul role="menu">
+                                    <li id="menuform:om_display" role="menuitem"><a href="display.html"><i
+                                                class="pi pi-desktop layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Display</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Display</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_elevation" role="menuitem"><a href="elevation.html"><i
+                                                class="pi pi-external-link layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Elevation</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Elevation</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_flexbox" role="menuitem"><a href="flexbox.html"><i
+                                                class="pi pi-directions layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">FlexBox</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">FlexBox</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_icons" role="menuitem"><a href="icons.html"><i
+                                                class="pi pi-search layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Icons</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Icons</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_text" role="menuitem"><a href="text.html"><i
+                                                class="pi pi-pencil layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Text</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Text</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_widgets" role="menuitem"><a href="widgets.html"><i
+                                                class="pi pi-star-o layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Widgets</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Widgets</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_grid" role="menuitem"><a href="grid.html"><i
+                                                class="pi pi-th-large layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Grid System</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Grid System</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_spacing" role="menuitem"><a href="spacing.html"><i
+                                                class="pi pi-arrow-right layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Spacing</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Spacing</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_typography" role="menuitem"><a href="typography.html"><i
+                                                class="pi pi-align-center layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Typography</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Typography</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="Separator"></li>
+                            <li id="menuform:om_default" role="menuitem" class="layout-root-menuitem">
+                                <div><span class="layout-menuitem-text">Pages</span></div><a href="#"><i
+                                        class="pi pi-briefcase layout-menuitem-icon"></i><span
+                                        class="layout-menuitem-text">Pages</span><i
+                                        class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a>
+                                <div class="layout-menu-tooltip">
+                                    <div class="layout-menu-tooltip-arrow"></div>
+                                    <div class="layout-menu-tooltip-text">Pages</div>
+                                </div>
+                                <ul role="menu">
+                                    <li id="menuform:om_crud" role="menuitem"><a href="crud.html"><i
+                                                class="pi pi-pencil layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Crud</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Crud</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_calendar" role="menuitem"><a href="calendar.html"><i
+                                                class="pi pi-calendar-plus layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Calendar</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Calendar</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_chronoline" role="menuitem"><a href="chronoline.html"><i
+                                                class="pi pi-calendar layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Chronoline</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Chronoline</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_landing" role="menuitem"><a href="landing.html"><i
+                                                class="pi pi-user-plus layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Landing</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Landing</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_login" role="menuitem"><a href="login.html"><i
+                                                class="pi pi-sign-in layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Login</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Login</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_invoice" role="menuitem"><a href="invoice.html"><i
+                                                class="pi pi-dollar layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Invoice</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Invoice</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_help" role="menuitem"><a href="help.html"><i
+                                                class="pi pi-question-circle layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Help</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Help</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_error" role="menuitem"><a href="error.html"><i
+                                                class="pi pi-times-circle layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Error</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Error</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_notfound" role="menuitem"><a href="notfound.html"><i
+                                                class="pi pi-exclamation-circle layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Not Found</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Not Found</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_access" role="menuitem"><a href="access.html"><i
+                                                class="pi pi-lock layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Access Denied</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Access Denied</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_empty" role="menuitem"><a href="empty.html"><i
+                                                class="pi pi-circle-off layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Empty</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Empty</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="Separator"></li>
+                            <li id="menuform:om_hierarchy" role="menuitem" class="layout-root-menuitem">
+                                <div><span class="layout-menuitem-text">Hierarchy</span></div><a href="#"><i
+                                        class="pi pi-align-left layout-menuitem-icon"></i><span
+                                        class="layout-menuitem-text">Hierarchy</span><i
+                                        class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a>
+                                <div class="layout-menu-tooltip">
+                                    <div class="layout-menu-tooltip-arrow"></div>
+                                    <div class="layout-menu-tooltip-text">Hierarchy</div>
+                                </div>
+                                <ul role="menu">
+                                    <li id="menuform:om_sm1" role="menuitem" class="layout-root-menuitem">
+                                        <div><span class="layout-menuitem-text">Submenu 1</span></div><a href="#"><i
+                                                class="pi pi-align-left layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Submenu 1</span><i
+                                                class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Submenu 1</div>
+                                        </div>
+                                        <ul role="menu">
+                                            <li id="menuform:om_sm11" role="menuitem" class="layout-root-menuitem">
+                                                <div><span class="layout-menuitem-text">Submenu 1.1</span></div><a
+                                                    href="#"><i class="pi pi-align-left layout-menuitem-icon"></i><span
+                                                        class="layout-menuitem-text">Submenu 1.1</span><i
+                                                        class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a>
+                                                <div class="layout-menu-tooltip">
+                                                    <div class="layout-menu-tooltip-arrow"></div>
+                                                    <div class="layout-menu-tooltip-text">Submenu 1.1</div>
+                                                </div>
+                                                <ul role="menu">
+                                                    <li id="menuform:om_lnk111" role="menuitem"><a href="#"><i
+                                                                class="pi pi-align-left layout-menuitem-icon"></i><span
+                                                                class="layout-menuitem-text">Link 1.1.1</span></a>
+                                                        <div class="layout-menu-tooltip">
+                                                            <div class="layout-menu-tooltip-arrow"></div>
+                                                            <div class="layout-menu-tooltip-text">Link 1.1.1</div>
+                                                        </div>
+                                                    </li>
+                                                    <li id="menuform:om_lnk112" role="menuitem"><a href="#"><i
+                                                                class="pi pi-align-left layout-menuitem-icon"></i><span
+                                                                class="layout-menuitem-text">Link 1.1.2</span></a>
+                                                        <div class="layout-menu-tooltip">
+                                                            <div class="layout-menu-tooltip-arrow"></div>
+                                                            <div class="layout-menu-tooltip-text">Link 1.1.2</div>
+                                                        </div>
+                                                    </li>
+                                                    <li id="menuform:om_lnk113" role="menuitem"><a href="#"><i
+                                                                class="pi pi-align-left layout-menuitem-icon"></i><span
+                                                                class="layout-menuitem-text">Link 1.1.3</span></a>
+                                                        <div class="layout-menu-tooltip">
+                                                            <div class="layout-menu-tooltip-arrow"></div>
+                                                            <div class="layout-menu-tooltip-text">Link 1.1.3</div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li id="menuform:om_sm12" role="menuitem" class="layout-root-menuitem">
+                                                <div><span class="layout-menuitem-text">Submenu 1.2</span></div><a
+                                                    href="#"><i class="pi pi-align-left layout-menuitem-icon"></i><span
+                                                        class="layout-menuitem-text">Submenu 1.2</span><i
+                                                        class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a>
+                                                <div class="layout-menu-tooltip">
+                                                    <div class="layout-menu-tooltip-arrow"></div>
+                                                    <div class="layout-menu-tooltip-text">Submenu 1.2</div>
+                                                </div>
+                                                <ul role="menu">
+                                                    <li id="menuform:om_lnk121" role="menuitem"><a href="#"><i
+                                                                class="pi pi-align-left layout-menuitem-icon"></i><span
+                                                                class="layout-menuitem-text">Link 1.2.1</span></a>
+                                                        <div class="layout-menu-tooltip">
+                                                            <div class="layout-menu-tooltip-arrow"></div>
+                                                            <div class="layout-menu-tooltip-text">Link 1.2.1</div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="menuform:om_sm2" role="menuitem" class="layout-root-menuitem">
+                                        <div><span class="layout-menuitem-text">Submenu 2</span></div><a href="#"><i
+                                                class="pi pi-align-left layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Submenu 2</span><i
+                                                class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Submenu 2</div>
+                                        </div>
+                                        <ul role="menu">
+                                            <li id="menuform:om_sm21" role="menuitem" class="layout-root-menuitem">
+                                                <div><span class="layout-menuitem-text">Submenu 2.1</span></div><a
+                                                    href="#"><i class="pi pi-align-left layout-menuitem-icon"></i><span
+                                                        class="layout-menuitem-text">Submenu 2.1</span><i
+                                                        class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a>
+                                                <div class="layout-menu-tooltip">
+                                                    <div class="layout-menu-tooltip-arrow"></div>
+                                                    <div class="layout-menu-tooltip-text">Submenu 2.1</div>
+                                                </div>
+                                                <ul role="menu">
+                                                    <li id="menuform:om_lnk211" role="menuitem"><a href="#"><i
+                                                                class="pi pi-align-left layout-menuitem-icon"></i><span
+                                                                class="layout-menuitem-text">Link 2.1.1</span></a>
+                                                        <div class="layout-menu-tooltip">
+                                                            <div class="layout-menu-tooltip-arrow"></div>
+                                                            <div class="layout-menu-tooltip-text">Link 2.1.1</div>
+                                                        </div>
+                                                    </li>
+                                                    <li id="menuform:om_lnk212" role="menuitem"><a href="#"><i
+                                                                class="pi pi-align-left layout-menuitem-icon"></i><span
+                                                                class="layout-menuitem-text">Link 2.1.2</span></a>
+                                                        <div class="layout-menu-tooltip">
+                                                            <div class="layout-menu-tooltip-arrow"></div>
+                                                            <div class="layout-menu-tooltip-text">Link 2.1.2</div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li id="menuform:om_sm22" role="menuitem" class="layout-root-menuitem">
+                                                <div><span class="layout-menuitem-text">Submenu 2.2</span></div><a
+                                                    href="#"><i class="pi pi-align-left layout-menuitem-icon"></i><span
+                                                        class="layout-menuitem-text">Submenu 2.2</span><i
+                                                        class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a>
+                                                <div class="layout-menu-tooltip">
+                                                    <div class="layout-menu-tooltip-arrow"></div>
+                                                    <div class="layout-menu-tooltip-text">Submenu 2.2</div>
+                                                </div>
+                                                <ul role="menu">
+                                                    <li id="menuform:om_lnk221" role="menuitem"><a href="#"><i
+                                                                class="pi pi-align-left layout-menuitem-icon"></i><span
+                                                                class="layout-menuitem-text">Link 2.2.1</span></a>
+                                                        <div class="layout-menu-tooltip">
+                                                            <div class="layout-menu-tooltip-arrow"></div>
+                                                            <div class="layout-menu-tooltip-text">Link 2.2.1</div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="Separator"></li>
+                            <li id="menuform:om_getstarted" role="menuitem" class="layout-root-menuitem">
+                                <div><span class="layout-menuitem-text">Start</span></div><a href="#"><i
+                                        class="pi pi-download layout-menuitem-icon"></i><span
+                                        class="layout-menuitem-text">Start</span><i
+                                        class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a>
+                                <div class="layout-menu-tooltip">
+                                    <div class="layout-menu-tooltip-arrow"></div>
+                                    <div class="layout-menu-tooltip-text">Start</div>
+                                </div>
+                                <ul role="menu">
+                                    <li id="menuform:om_buy" role="menuitem"><a href="https://www.primefaces.org/store"><i
+                                                class="pi pi-shopping-cart layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Buy Now</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Buy Now</div>
+                                        </div>
+                                    </li>
+                                    <li id="menuform:om_doc" role="menuitem"><a href="documentation.html"><i
+                                                class="pi pi-info-circle layout-menuitem-icon"></i><span
+                                                class="layout-menuitem-text">Documentation</span></a>
+                                        <div class="layout-menu-tooltip">
+                                            <div class="layout-menu-tooltip-arrow"></div>
+                                            <div class="layout-menu-tooltip-text">Documentation</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <script id="menuform:j_idt37_s"
+                        type="text/javascript">PrimeFaces.cw("Poseidon", "PoseidonMenuWidget", { id: "menuform:j_idt37", pathname: "/poseidon/empty.xhtml" });</script>
+                        <input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:2"
+                               value="-7500027867546551808:-5124627841032148127" autocomplete="off" />
+                    </form>
+                </div>
+            </div>
+
+            <div class="layout-rightpanel">
+                <div class="rightpanel-wrapper">
+                    <div class="section-tasks today">
+                        <h5>Your Tasks Today</h5>
+                        <ul>
+                            <li>
+                                <div id="j_idt44" class="ui-selectbooleancheckbox ui-chkbox ui-widget">
+                                    <div class="ui-helper-hidden-accessible"><input id="j_idt44_input" name="j_idt44_input"
+                                                                                    type="checkbox" autocomplete="off" checked="checked" aria-checked="true"
+                                                                                    onchange="onTaskCheckboxChange(this)" /></div>
+                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default ui-state-active">
+                                        <span class="ui-chkbox-icon ui-icon ui-icon-check ui-c"></span></div>
+                                </div>
+                                <script id="j_idt44_s"
+                                type="text/javascript">$(function () { PrimeFaces.cw("SelectBooleanCheckbox", "widget_j_idt44", { id: "j_idt44" }); });</script>
+                                <div class="task done">
+                                    <h6>Sales reports</h6>
+                                    <span>Today</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="j_idt46" class="ui-selectbooleancheckbox ui-chkbox ui-widget">
+                                    <div class="ui-helper-hidden-accessible"><input id="j_idt46_input" name="j_idt46_input"
+                                                                                    type="checkbox" autocomplete="off" checked="checked" aria-checked="true"
+                                                                                    onchange="onTaskCheckboxChange(this)" /></div>
+                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default ui-state-active">
+                                        <span class="ui-chkbox-icon ui-icon ui-icon-check ui-c"></span></div>
+                                </div>
+                                <script id="j_idt46_s"
+                                type="text/javascript">$(function () { PrimeFaces.cw("SelectBooleanCheckbox", "widget_j_idt46", { id: "j_idt46" }); });</script>
+                                <div class="task done">
+                                    <h6>Pay invoices</h6>
+                                    <span>Today</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="j_idt48" class="ui-selectbooleancheckbox ui-chkbox ui-widget">
+                                    <div class="ui-helper-hidden-accessible"><input id="j_idt48_input" name="j_idt48_input"
+                                                                                    type="checkbox" autocomplete="off" aria-checked="false"
+                                                                                    onchange="onTaskCheckboxChange(this)" /></div>
+                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span
+                                            class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div>
+                                </div>
+                                <script id="j_idt48_s"
+                                type="text/javascript">$(function () { PrimeFaces.cw("SelectBooleanCheckbox", "widget_j_idt48", { id: "j_idt48" }); });</script>
+                                <div class="task">
+                                    <h6>Dinner with Tony</h6>
+                                    <span>Today, 22:36</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="j_idt50" class="ui-selectbooleancheckbox ui-chkbox ui-widget">
+                                    <div class="ui-helper-hidden-accessible"><input id="j_idt50_input" name="j_idt50_input"
+                                                                                    type="checkbox" autocomplete="off" aria-checked="false"
+                                                                                    onchange="onTaskCheckboxChange(this)" /></div>
+                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span
+                                            class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div>
+                                </div>
+                                <script id="j_idt50_s"
+                                type="text/javascript">$(function () { PrimeFaces.cw("SelectBooleanCheckbox", "widget_j_idt50", { id: "j_idt50" }); });</script>
+                                <div class="task">
+                                    <h6>Client meeting</h6>
+                                    <span>Today</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <hr />
+
+                    <div class="section-tasks upcoming">
+                        <h5>Upcoming</h5>
+
+                        <ul>
+                            <li>
+                                <div id="j_idt52" class="ui-selectbooleancheckbox ui-chkbox ui-widget">
+                                    <div class="ui-helper-hidden-accessible"><input id="j_idt52_input" name="j_idt52_input"
+                                                                                    type="checkbox" autocomplete="off" aria-checked="false"
+                                                                                    onchange="onTaskCheckboxChange(this)" /></div>
+                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span
+                                            class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div>
+                                </div>
+                                <script id="j_idt52_s"
+                                type="text/javascript">$(function () { PrimeFaces.cw("SelectBooleanCheckbox", "widget_j_idt52", { id: "j_idt52" }); });</script>
+                                <div class="task">
+                                    <h6>New representative meeting</h6>
+                                    <span>27 May</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="j_idt54" class="ui-selectbooleancheckbox ui-chkbox ui-widget">
+                                    <div class="ui-helper-hidden-accessible"><input id="j_idt54_input" name="j_idt54_input"
+                                                                                    type="checkbox" autocomplete="off" aria-checked="false"
+                                                                                    onchange="onTaskCheckboxChange(this)" /></div>
+                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span
+                                            class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div>
+                                </div>
+                                <script id="j_idt54_s"
+                                type="text/javascript">$(function () { PrimeFaces.cw("SelectBooleanCheckbox", "widget_j_idt54", { id: "j_idt54" }); });</script>
+                                <div class="task">
+                                    <h6>Flight tickets</h6>
+                                    <span>28 May</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="j_idt56" class="ui-selectbooleancheckbox ui-chkbox ui-widget">
+                                    <div class="ui-helper-hidden-accessible"><input id="j_idt56_input" name="j_idt56_input"
+                                                                                    type="checkbox" autocomplete="off" aria-checked="false"
+                                                                                    onchange="onTaskCheckboxChange(this)" /></div>
+                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span
+                                            class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div>
+                                </div>
+                                <script id="j_idt56_s"
+                                type="text/javascript">$(function () { PrimeFaces.cw("SelectBooleanCheckbox", "widget_j_idt56", { id: "j_idt56" }); });</script>
+                                <div class="task">
+                                    <h6>Generate charts</h6>
+                                    <span>29 May</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="j_idt58" class="ui-selectbooleancheckbox ui-chkbox ui-widget">
+                                    <div class="ui-helper-hidden-accessible"><input id="j_idt58_input" name="j_idt58_input"
+                                                                                    type="checkbox" autocomplete="off" aria-checked="false"
+                                                                                    onchange="onTaskCheckboxChange(this)" /></div>
+                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span
+                                            class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div>
+                                </div>
+                                <script id="j_idt58_s"
+                                type="text/javascript">$(function () { PrimeFaces.cw("SelectBooleanCheckbox", "widget_j_idt58", { id: "j_idt58" }); });</script>
+                                <div class="task">
+                                    <h6>Delete old files</h6>
+                                    <span>30 May</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <script type="text/javascript">
+                function onTaskCheckboxChange(input) {
+                if (input) {
+                var inputEl = $(input);
+                var taskEl = inputEl.closest('.ui-selectbooleancheckbox').next();
+                if (inputEl.is(':checked'))
+                        taskEl.addClass('done');
+                else
+                        taskEl.removeClass('done');
+                }
+                }
+            </script>
+
+            <div id="layout-config" class="layout-config">
+                <div class="layout-config-content">
+                    <a href="#" id="layout-config-button" class="layout-config-button">
+                        <i class="pi pi-cog"></i>
+                    </a>
+                    <form id="config-form" name="config-form" method="post"
+                          action="https://www.primefaces.org/poseidon/empty.xhtml" class="layout-config-form"
+                          enctype="application/x-www-form-urlencoded">
+                        <input type="hidden" name="config-form" value="config-form" />
+
+                        <div class="layout-config-header">
+                            <h5>Theme Customization</h5>
+                            <span>Poseidon offers different themes for layout, topbar, menu etc.</span>
+                        </div>
+                        <div id="config-form:lightdark-panel"
+                             class="ui-outputpanel ui-widget layout-config-section options">
+                            <span class="section-name">Layout Mode</span>
+                            <div class="p-grid layout-config-options">
+                                <div id="config-form:j_idt63"
+                                     class="ui-selectoneradio ui-widget ui-grid ui-grid-responsive">
+                                    <div class="ui-g">
+                                        <div class="ui-g-12 ui-md-4">
+                                            <div class="ui-radiobutton ui-widget">
+                                                <div class="ui-helper-hidden-accessible"><input id="config-form:j_idt63:0"
+                                                                                                name="config-form:j_idt63" type="radio" value="light"
+                                                                                                checked="checked" /></div>
+                                                <div
+                                                    class="ui-radiobutton-box ui-widget ui-corner-all ui-state-default ui-state-active">
+                                                    <span class="ui-radiobutton-icon ui-icon ui-icon-bullet ui-c"></span>
+                                                </div>
+                                            </div><label for="config-form:j_idt63:0">Light</label>
+                                        </div>
+                                        <div class="ui-g-12 ui-md-4">
+                                            <div class="ui-radiobutton ui-widget">
+<!--                                                <div class="ui-helper-hidden-accessible"><input id="config-form:j_idt63:1"
+                                                                                                name="config-form:j_idt63" type="radio" value="dark"
+                                                                                                onchange="PrimeFaces.bcn(this, event, [function(event){PrimeFaces.PoseidonConfigurator.changeLayout('denim', event.target.value)}, function(event){PrimeFaces.ab({s: & quot; config - form:j_idt63 & quot; , e: & quot; valueChange & quot; , f: & quot; config - form & quot; , p: & quot; config - form:j_idt63 & quot; , u: & quot; config - form logolink footerlogolink & quot; , onst:function(cfg){PrimeFaces.PoseidonConfigurator.beforeResourceChange(); }}); }])" />
+                                                </div>-->
+                                                <div class="ui-radiobutton-box ui-widget ui-corner-all ui-state-default">
+                                                    <span class="ui-radiobutton-icon ui-icon ui-icon-blank ui-c"></span>
+                                                </div>
+                                            </div><label for="config-form:j_idt63:1">Dark</label>
+                                        </div>
+                                        <div class="ui-g-12 ui-md-4">
+                                            <div class="ui-radiobutton ui-widget">
+<!--                                                <div class="ui-helper-hidden-accessible"><input id="config-form:j_idt63:2"
+                                                                                                name="config-form:j_idt63" type="radio" value="dim"
+                                                                                                onchange="PrimeFaces.bcn(this, event, [function(event){PrimeFaces.PoseidonConfigurator.changeLayout('denim', event.target.value)}, function(event){PrimeFaces.ab({s: & quot; config - form:j_idt63 & quot; , e: & quot; valueChange & quot; , f: & quot; config - form & quot; , p: & quot; config - form:j_idt63 & quot; , u: & quot; config - form logolink footerlogolink & quot; , onst:function(cfg){PrimeFaces.PoseidonConfigurator.beforeResourceChange(); }}); }])" />
+                                                </div>-->
+                                                <div class="ui-radiobutton-box ui-widget ui-corner-all ui-state-default">
+                                                    <span class="ui-radiobutton-icon ui-icon ui-icon-blank ui-c"></span>
+                                                </div>
+                                            </div><label for="config-form:j_idt63:2">Dim</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script id="config-form:j_idt63_s"
+                                type="text/javascript">$(function () { PrimeFaces.cw("SelectOneRadio", "widget_config_form_j_idt63", { id: "config-form:j_idt63", unselectable: false }); });</script>
+                            </div>
+                        </div>
+                        <div id="config-form:menumodes-panel"
+                             class="ui-outputpanel ui-widget layout-config-section options">
+                            <span class="section-name">Menu Mode</span>
+                            <div class="p-grid layout-config-options">
+                                <div id="config-form:j_idt69"
+                                     class="ui-selectoneradio ui-widget ui-grid ui-grid-responsive">
+                                    <div class="ui-g">
+                                        <div class="ui-g-12 ui-md-6">
+                                            <div class="ui-radiobutton ui-widget">
+<!--                                                <div class="ui-helper-hidden-accessible"><input id="config-form:j_idt69:0"
+                                                                                                name="config-form:j_idt69" type="radio"
+                                                                                                value="layout-static layout-static-active"
+                                                                                                onchange="PrimeFaces.bcn(this, event, [function(event){PrimeFaces.PoseidonConfigurator.changeMenuMode(event.target.value)}, function(event){PrimeFaces.ab({s: & quot; config - form:j_idt69 & quot; , e: & quot; valueChange & quot; , f: & quot; config - form & quot; , p: & quot; config - form:j_idt69 & quot; , u: & quot; config - form:menumodes - panel & quot; }); }])"
+                                                                                                checked="checked" /></div>-->
+                                                <div
+                                                    class="ui-radiobutton-box ui-widget ui-corner-all ui-state-default ui-state-active">
+                                                    <span class="ui-radiobutton-icon ui-icon ui-icon-bullet ui-c"></span>
+                                                </div>
+                                            </div><label for="config-form:j_idt69:0">Static</label>
+                                        </div>
+                                        <div class="ui-g-12 ui-md-6">
+                                            <div class="ui-radiobutton ui-widget">
+<!--                                                <div class="ui-helper-hidden-accessible"><input id="config-form:j_idt69:1"
+                                                                                                name="config-form:j_idt69" type="radio" value="layout-overlay"
+                                                                                                onchange="PrimeFaces.bcn(this, event, [function(event){PrimeFaces.PoseidonConfigurator.changeMenuMode(event.target.value)}, function(event){PrimeFaces.ab({s: & quot; config - form:j_idt69 & quot; , e: & quot; valueChange & quot; , f: & quot; config - form & quot; , p: & quot; config - form:j_idt69 & quot; , u: & quot; config - form:menumodes - panel & quot; }); }])" />
+                                                </div>-->
+                                                <div class="ui-radiobutton-box ui-widget ui-corner-all ui-state-default">
+                                                    <span class="ui-radiobutton-icon ui-icon ui-icon-blank ui-c"></span>
+                                                </div>
+                                            </div><label for="config-form:j_idt69:1">Overlay</label>
+                                        </div>
+                                    </div>
+                                    <div class="ui-g">
+                                        <div class="ui-g-12 ui-md-6">
+                                            <div class="ui-radiobutton ui-widget">
+<!--                                                <div class="ui-helper-hidden-accessible"><input id="config-form:j_idt69:2"
+                                                                                                name="config-form:j_idt69" type="radio" value="layout-horizontal"
+                                                                                                onchange="PrimeFaces.bcn(this, event, [function(event){PrimeFaces.PoseidonConfigurator.changeMenuMode(event.target.value)}, function(event){PrimeFaces.ab({s: & quot; config - form:j_idt69 & quot; , e: & quot; valueChange & quot; , f: & quot; config - form & quot; , p: & quot; config - form:j_idt69 & quot; , u: & quot; config - form:menumodes - panel & quot; }); }])" />
+                                                </div>-->
+                                                <div class="ui-radiobutton-box ui-widget ui-corner-all ui-state-default">
+                                                    <span class="ui-radiobutton-icon ui-icon ui-icon-blank ui-c"></span>
+                                                </div>
+                                            </div><label for="config-form:j_idt69:2">Horizontal</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script id="config-form:j_idt69_s"
+                                type="text/javascript">$(function () { PrimeFaces.cw("SelectOneRadio", "widget_config_form_j_idt69", { id: "config-form:j_idt69", unselectable: false }); });</script>
+                            </div>
+                        </div>
+                        <div id="config-form:menuthemes-panel"
+                             class="ui-outputpanel ui-widget layout-config-section options">
+                            <span class="section-name">Menu Theme</span>
+                            <div class="p-grid layout-config-options">
+                                <div id="config-form:j_idt75"
+                                     class="ui-selectoneradio ui-widget ui-grid ui-grid-responsive">
+                                    <div class="ui-g">
+                                        <div class="ui-g-12 ui-md-4">
+                                            <div class="ui-radiobutton ui-widget">
+<!--                                                <div class="ui-helper-hidden-accessible"><input id="config-form:j_idt75:0"
+                                                                                                name="config-form:j_idt75" type="radio" value="light"
+                                                                                                onchange="PrimeFaces.bcn(this, event, [function(event){PrimeFaces.PoseidonConfigurator.changeSectionTheme(event.target.value, 'layout-menu')}, function(event){PrimeFaces.ab({s: & quot; config - form:j_idt75 & quot; , e: & quot; valueChange & quot; , f: & quot; config - form & quot; , p: & quot; config - form:j_idt75 & quot; , u: & quot; logolink config - form:menuthemes - panel & quot; }); }])" />
+                                                </div>-->
+                                                <div class="ui-radiobutton-box ui-widget ui-corner-all ui-state-default">
+                                                    <span class="ui-radiobutton-icon ui-icon ui-icon-blank ui-c"></span>
+                                                </div>
+                                            </div><label for="config-form:j_idt75:0">Light</label>
+                                        </div>
+                                        <div class="ui-g-12 ui-md-4">
+                                            <div class="ui-radiobutton ui-widget">
+<!--                                                <div class="ui-helper-hidden-accessible"><input id="config-form:j_idt75:1"
+                                                                                                name="config-form:j_idt75" type="radio" value="dark"
+                                                                                                onchange="PrimeFaces.bcn(this, event, [function(event){PrimeFaces.PoseidonConfigurator.changeSectionTheme(event.target.value, 'layout-menu')}, function(event){PrimeFaces.ab({s: & quot; config - form:j_idt75 & quot; , e: & quot; valueChange & quot; , f: & quot; config - form & quot; , p: & quot; config - form:j_idt75 & quot; , u: & quot; logolink config - form:menuthemes - panel & quot; }); }])" />
+                                                </div>-->
+                                                <div class="ui-radiobutton-box ui-widget ui-corner-all ui-state-default">
+                                                    <span class="ui-radiobutton-icon ui-icon ui-icon-blank ui-c"></span>
+                                                </div>
+                                            </div><label for="config-form:j_idt75:1">Dark</label>
+                                        </div>
+                                        <div class="ui-g-12 ui-md-4">
+                                            <div class="ui-radiobutton ui-widget">
+<!--                                                <div class="ui-helper-hidden-accessible"><input id="config-form:j_idt75:2"
+                                                                                                name="config-form:j_idt75" type="radio" value="dim"
+                                                                                                onchange="PrimeFaces.bcn(this, event, [function(event){PrimeFaces.PoseidonConfigurator.changeSectionTheme(event.target.value, 'layout-menu')}, function(event){PrimeFaces.ab({s: & quot; config - form:j_idt75 & quot; , e: & quot; valueChange & quot; , f: & quot; config - form & quot; , p: & quot; config - form:j_idt75 & quot; , u: & quot; logolink config - form:menuthemes - panel & quot; }); }])"
+                                                                                                checked="checked" /></div>-->
+                                                <div
+                                                    class="ui-radiobutton-box ui-widget ui-corner-all ui-state-default ui-state-active">
+                                                    <span class="ui-radiobutton-icon ui-icon ui-icon-bullet ui-c"></span>
+                                                </div>
+                                            </div><label for="config-form:j_idt75:2">Dim</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script id="config-form:j_idt75_s"
+                                type="text/javascript">$(function () { PrimeFaces.cw("SelectOneRadio", "widget_config_form_j_idt75", { id: "config-form:j_idt75", unselectable: false }); });</script>
+                            </div>
+                        </div>
+                        <div id="config-form:topbarthemes-panel"
+                             class="ui-outputpanel ui-widget layout-config-section options">
+                            <span class="section-name">Topbar Mode</span>
+                            <div class="p-grid layout-config-options">
+                                <div id="config-form:j_idt81"
+                                     class="ui-selectoneradio ui-widget ui-grid ui-grid-responsive">
+                                    <div class="ui-g">
+                                        <div class="ui-g-12 ui-md-4">
+                                            <div class="ui-radiobutton ui-widget">
+<!--                                                <div class="ui-helper-hidden-accessible"><input id="config-form:j_idt81:0"
+                                                                                                name="config-form:j_idt81" type="radio" value="light"
+                                                                                                onchange="PrimeFaces.bcn(this, event, [function(event){PrimeFaces.PoseidonConfigurator.changeSectionTheme(event.target.value, 'layout-topbar')}, function(event){PrimeFaces.ab({s: & quot; config - form:j_idt81 & quot; , e: & quot; valueChange & quot; , f: & quot; config - form & quot; , p: & quot; config - form:j_idt81 & quot; , u: & quot; logolink config - form & quot; }); }])"
+                                                                                                checked="checked" /></div>-->
+                                                <div
+                                                    class="ui-radiobutton-box ui-widget ui-corner-all ui-state-default ui-state-active">
+                                                    <span class="ui-radiobutton-icon ui-icon ui-icon-bullet ui-c"></span>
+                                                </div>
+                                            </div><label for="config-form:j_idt81:0">Light</label>
+                                        </div>
+                                        <div class="ui-g-12 ui-md-4">
+                                            <div class="ui-radiobutton ui-widget">
+<!--                                                <div class="ui-helper-hidden-accessible"><input id="config-form:j_idt81:1"
+                                                                                                name="config-form:j_idt81" type="radio" value="dark"
+                                                                                                onchange="PrimeFaces.bcn(this, event, [function(event){PrimeFaces.PoseidonConfigurator.changeSectionTheme(event.target.value, 'layout-topbar')}, function(event){PrimeFaces.ab({s: & quot; config - form:j_idt81 & quot; , e: & quot; valueChange & quot; , f: & quot; config - form & quot; , p: & quot; config - form:j_idt81 & quot; , u: & quot; logolink config - form & quot; }); }])" />
+                                                </div>-->
+                                                <div class="ui-radiobutton-box ui-widget ui-corner-all ui-state-default">
+                                                    <span class="ui-radiobutton-icon ui-icon ui-icon-blank ui-c"></span>
+                                                </div>
+                                            </div><label for="config-form:j_idt81:1">Dark</label>
+                                        </div>
+                                        <div class="ui-g-12 ui-md-4">
+                                            <div class="ui-radiobutton ui-widget">
+<!--                                                <div class="ui-helper-hidden-accessible"><input id="config-form:j_idt81:2"
+                                                                                                name="config-form:j_idt81" type="radio" value="dim"
+                                                                                                onchange="PrimeFaces.bcn(this, event, [function(event){PrimeFaces.PoseidonConfigurator.changeSectionTheme(event.target.value, 'layout-topbar')}, function(event){PrimeFaces.ab({s: & quot; config - form:j_idt81 & quot; , e: & quot; valueChange & quot; , f: & quot; config - form & quot; , p: & quot; config - form:j_idt81 & quot; , u: & quot; logolink config - form & quot; }); }])" />
+                                                </div>-->
+                                                <div class="ui-radiobutton-box ui-widget ui-corner-all ui-state-default">
+                                                    <span class="ui-radiobutton-icon ui-icon ui-icon-blank ui-c"></span>
+                                                </div>
+                                            </div><label for="config-form:j_idt81:2">Dim</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script id="config-form:j_idt81_s"
+                                type="text/javascript">$(function () { PrimeFaces.cw("SelectOneRadio", "widget_config_form_j_idt81", { id: "config-form:j_idt81", unselectable: false }); });</script>
+                            </div>
+                        </div>
+                        <div id="config-form:outlined-panel" class="ui-outputpanel ui-widget layout-config-section options">
+                            <span class="section-name">Form Type</span>
+                            <div class="p-grid layout-config-options">
+                                <div id="config-form:j_idt87"
+                                     class="ui-selectoneradio ui-widget ui-grid ui-grid-responsive">
+                                    <div class="ui-g">
+                                        <div class="ui-g-12 ui-md-6">
+                                            <div class="ui-radiobutton ui-widget">
+<!--                                                <div class="ui-helper-hidden-accessible"><input id="config-form:j_idt87:0"
+                                                                                                name="config-form:j_idt87" type="radio" value="outlined"
+                                                                                                onchange="PrimeFaces.bcn(this, event, [function(event){PrimeFaces.PoseidonConfigurator.updateInputStyle(event.target.value)}, function(event){PrimeFaces.ab({s: & quot; config - form:j_idt87 & quot; , e: & quot; valueChange & quot; , f: & quot; config - form & quot; , p: & quot; config - form:j_idt87 & quot; }); }])"
+                                                                                                checked="checked" /></div>-->
+                                                <div
+                                                    class="ui-radiobutton-box ui-widget ui-corner-all ui-state-default ui-state-active">
+                                                    <span class="ui-radiobutton-icon ui-icon ui-icon-bullet ui-c"></span>
+                                                </div>
+                                            </div><label for="config-form:j_idt87:0">Outlined</label>
+                                        </div>
+                                        <div class="ui-g-12 ui-md-6">
+                                            <div class="ui-radiobutton ui-widget">
+<!--                                                <div class="ui-helper-hidden-accessible"><input id="config-form:j_idt87:1"
+                                                                                                name="config-form:j_idt87" type="radio" value="filled"
+                                                                                                onchange="PrimeFaces.bcn(this, event, [function(event){PrimeFaces.PoseidonConfigurator.updateInputStyle(event.target.value)}, function(event){PrimeFaces.ab({s: & quot; config - form:j_idt87 & quot; , e: & quot; valueChange & quot; , f: & quot; config - form & quot; , p: & quot; config - form:j_idt87 & quot; }); }])" />
+                                                </div>-->
+                                                <div class="ui-radiobutton-box ui-widget ui-corner-all ui-state-default">
+                                                    <span class="ui-radiobutton-icon ui-icon ui-icon-blank ui-c"></span>
+                                                </div>
+                                            </div><label for="config-form:j_idt87:1">Filled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script id="config-form:j_idt87_s"
+                                type="text/javascript">$(function () { PrimeFaces.cw("SelectOneRadio", "widget_config_form_j_idt87", { id: "config-form:j_idt87", unselectable: false }); });</script>
+                            </div>
+                        </div>
+                        <div id="config-form:orientation-panel" class="ui-outputpanel ui-widget layout-config-section dark">
+                            <span class="section-name">RTL Mode</span>
+                            <div id="config-form:layout-switch-2"
+                                 class="ui-inputswitch ui-widget ui-widget-content ui-corner-all">
+                                <div class="ui-inputswitch-off"><span>off</span></div>
+                                <div class="ui-inputswitch-on ui-state-active"><span>on</span></div>
+                                <div class="ui-inputswitch-handle ui-state-default "></div>
+<!--                                <div class="ui-helper-hidden-accessible"><input id="config-form:layout-switch-2_input"
+                                                                                name="config-form:layout-switch-2_input" type="checkbox"
+                                                                                onchange="PrimeFaces.bcn(this, event, [function(event){PrimeFaces.PoseidonConfigurator.changeMenuToRTL()}, function(event){PrimeFaces.ab({s: & quot; config - form:layout - switch - 2 & quot; , e: & quot; change & quot; , f: & quot; config - form & quot; , p: & quot; config - form:layout - switch - 2 & quot; , u: & quot; config - form & quot; , onst:function(cfg){PrimeFaces.PoseidonConfigurator.beforeResourceChange(); }}); }]);" />
+                                </div>-->
+                            </div>
+                            <script id="config-form:layout-switch-2_s"
+                            type="text/javascript">$(function () { PrimeFaces.cw("InputSwitch", "widget_config_form_layout_switch_2", { id: "config-form:layout-switch-2" }); });</script>
+                        </div>
+                        <div id="config-form:componentthemes-panel"
+                             class="ui-outputpanel ui-widget layout-config-section colors">
+                            <span class="section-name">Component Colors</span>
+                            <div class="p-grid layout-config-colors">
+<!--                                <div class="p-col p-col-fixed"><a id="config-form:j_idt93:0:j_idt95" href="#"
+                                                                  class="ui-commandlink ui-widget layout-config-option"
+                                                                  onclick="PrimeFaces.ab({s: & quot; config - form:j_idt93:0:j_idt95 & quot; , f: & quot; config - form & quot; , p: & quot; config - form:j_idt93:0:j_idt95 & quot; , u: & quot; config - form & quot; , onst:function(cfg){PrimeFaces.PoseidonConfigurator.beforeResourceChange(); }, onco:function(xhr, status, args, data){PrimeFaces.PoseidonConfigurator.changeComponentsTheme('denim', 'light'); }}); return false;">
+                                        <span class="layout-config-option-color" style="background-color: #2f8ee5;"
+                                              title="Denim"></span>
+                                        <span class="layout-config-option-check-mask">
+                                            <i class="pi pi-check"></i>
+                                        </span></a>
+                                </div>-->
+<!--                                <div class="p-col p-col-fixed"><a id="config-form:j_idt93:1:j_idt95" href="#"
+                                                                  class="ui-commandlink ui-widget layout-config-option"
+                                                                  onclick="PrimeFaces.ab({s: & quot; config - form:j_idt93:1:j_idt95 & quot; , f: & quot; config - form & quot; , p: & quot; config - form:j_idt93:1:j_idt95 & quot; , u: & quot; config - form & quot; , onst:function(cfg){PrimeFaces.PoseidonConfigurator.beforeResourceChange(); }, onco:function(xhr, status, args, data){PrimeFaces.PoseidonConfigurator.changeComponentsTheme('sea-green', 'light'); }}); return false;">
+                                        <span class="layout-config-option-color" style="background-color: #30A059;"
+                                              title="Sea Green"></span></a>
+                                </div>-->
+<!--                                <div class="p-col p-col-fixed"><a id="config-form:j_idt93:2:j_idt95" href="#"
+                                                                  class="ui-commandlink ui-widget layout-config-option"
+                                                                  onclick="PrimeFaces.ab({s: & quot; config - form:j_idt93:2:j_idt95 & quot; , f: & quot; config - form & quot; , p: & quot; config - form:j_idt93:2:j_idt95 & quot; , u: & quot; config - form & quot; , onst:function(cfg){PrimeFaces.PoseidonConfigurator.beforeResourceChange(); }, onco:function(xhr, status, args, data){PrimeFaces.PoseidonConfigurator.changeComponentsTheme('amethyst', 'light'); }}); return false;">
+                                        <span class="layout-config-option-color" style="background-color: #834CA8;"
+                                              title="Amethyst"></span></a>
+                                </div>-->
+<!--                                <div class="p-col p-col-fixed"><a id="config-form:j_idt93:3:j_idt95" href="#"
+                                                                  class="ui-commandlink ui-widget layout-config-option"
+                                                                  onclick="PrimeFaces.ab({s: & quot; config - form:j_idt93:3:j_idt95 & quot; , f: & quot; config - form & quot; , p: & quot; config - form:j_idt93:3:j_idt95 & quot; , u: & quot; config - form & quot; , onst:function(cfg){PrimeFaces.PoseidonConfigurator.beforeResourceChange(); }, onco:function(xhr, status, args, data){PrimeFaces.PoseidonConfigurator.changeComponentsTheme('wedgewood', 'light'); }}); return false;">
+                                        <span class="layout-config-option-color" style="background-color: #557DAA;"
+                                              title="Wedgewood"></span></a>
+                                </div>-->
+<!--                                <div class="p-col p-col-fixed"><a id="config-form:j_idt93:4:j_idt95" href="#"
+                                                                  class="ui-commandlink ui-widget layout-config-option"
+                                                                  onclick="PrimeFaces.ab({s: & quot; config - form:j_idt93:4:j_idt95 & quot; , f: & quot; config - form & quot; , p: & quot; config - form:j_idt93:4:j_idt95 & quot; , u: & quot; config - form & quot; , onst:function(cfg){PrimeFaces.PoseidonConfigurator.beforeResourceChange(); }, onco:function(xhr, status, args, data){PrimeFaces.PoseidonConfigurator.changeComponentsTheme('tapestry', 'light'); }}); return false;">
+                                        <span class="layout-config-option-color" style="background-color: #A74896;"
+                                              title="Tapestry"></span></a>
+                                </div>
+                                <div class="p-col p-col-fixed"><a id="config-form:j_idt93:5:j_idt95" href="#"
+                                                                  class="ui-commandlink ui-widget layout-config-option"
+                                                                  onclick="PrimeFaces.ab({s: & quot; config - form:j_idt93:5:j_idt95 & quot; , f: & quot; config - form & quot; , p: & quot; config - form:j_idt93:5:j_idt95 & quot; , u: & quot; config - form & quot; , onst:function(cfg){PrimeFaces.PoseidonConfigurator.beforeResourceChange(); }, onco:function(xhr, status, args, data){PrimeFaces.PoseidonConfigurator.changeComponentsTheme('cape-palliser', 'light'); }}); return false;">
+                                        <span class="layout-config-option-color" style="background-color: #A46B3E;"
+                                              title="Cape Palliser"></span></a>
+                                </div>
+                                <div class="p-col p-col-fixed"><a id="config-form:j_idt93:6:j_idt95" href="#"
+                                                                  class="ui-commandlink ui-widget layout-config-option"
+                                                                  onclick="PrimeFaces.ab({s: & quot; config - form:j_idt93:6:j_idt95 & quot; , f: & quot; config - form & quot; , p: & quot; config - form:j_idt93:6:j_idt95 & quot; , u: & quot; config - form & quot; , onst:function(cfg){PrimeFaces.PoseidonConfigurator.beforeResourceChange(); }, onco:function(xhr, status, args, data){PrimeFaces.PoseidonConfigurator.changeComponentsTheme('apple', 'light'); }}); return false;">
+                                        <span class="layout-config-option-color" style="background-color: #52A235;"
+                                              title="Apple"></span></a>
+                                </div>-->
+<!--                                <div class="p-col p-col-fixed"><a id="config-form:j_idt93:7:j_idt95" href="#"
+                                                                  class="ui-commandlink ui-widget layout-config-option"
+                                                                  onclick="PrimeFaces.ab({s: & quot; config - form:j_idt93:7:j_idt95 & quot; , f: & quot; config - form & quot; , p: & quot; config - form:j_idt93:7:j_idt95 & quot; , u: & quot; config - form & quot; , onst:function(cfg){PrimeFaces.PoseidonConfigurator.beforeResourceChange(); }, onco:function(xhr, status, args, data){PrimeFaces.PoseidonConfigurator.changeComponentsTheme('gigas', 'light'); }}); return false;">
+                                        <span class="layout-config-option-color" style="background-color: #5751A9;"
+                                              title="Gigas"></span></a>
+                                </div>
+                                <div class="p-col p-col-fixed"><a id="config-form:j_idt93:8:j_idt95" href="#"
+                                                                  class="ui-commandlink ui-widget layout-config-option"
+                                                                  onclick="PrimeFaces.ab({s: & quot; config - form:j_idt93:8:j_idt95 & quot; , f: & quot; config - form & quot; , p: & quot; config - form:j_idt93:8:j_idt95 & quot; , u: & quot; config - form & quot; , onst:function(cfg){PrimeFaces.PoseidonConfigurator.beforeResourceChange(); }, onco:function(xhr, status, args, data){PrimeFaces.PoseidonConfigurator.changeComponentsTheme('jungle-green', 'light'); }}); return false;">
+                                        <span class="layout-config-option-color" style="background-color: #2B9F9C;"
+                                              title="Jungle Green"></span></a>
+                                </div>
+                                <div class="p-col p-col-fixed"><a id="config-form:j_idt93:9:j_idt95" href="#"
+                                                                  class="ui-commandlink ui-widget layout-config-option"
+                                                                  onclick="PrimeFaces.ab({s: & quot; config - form:j_idt93:9:j_idt95 & quot; , f: & quot; config - form & quot; , p: & quot; config - form:j_idt93:9:j_idt95 & quot; , u: & quot; config - form & quot; , onst:function(cfg){PrimeFaces.PoseidonConfigurator.beforeResourceChange(); }, onco:function(xhr, status, args, data){PrimeFaces.PoseidonConfigurator.changeComponentsTheme('camelot', 'light'); }}); return false;">
+                                        <span class="layout-config-option-color" style="background-color: #A54357;"
+                                              title="Camelot"></span></a>
+                                </div>
+                                <div class="p-col p-col-fixed"><a id="config-form:j_idt93:10:j_idt95" href="#"
+                                                                  class="ui-commandlink ui-widget layout-config-option"
+                                                                  onclick="PrimeFaces.ab({s: & quot; config - form:j_idt93:10:j_idt95 & quot; , f: & quot; config - form & quot; , p: & quot; config - form:j_idt93:10:j_idt95 & quot; , u: & quot; config - form & quot; , onst:function(cfg){PrimeFaces.PoseidonConfigurator.beforeResourceChange(); }, onco:function(xhr, status, args, data){PrimeFaces.PoseidonConfigurator.changeComponentsTheme('amber', 'light'); }}); return false;">
+                                        <span class="layout-config-option-color" style="background-color: #D49341;"
+                                              title="Amber"></span></a>
+                                </div>
+                                <div class="p-col p-col-fixed"><a id="config-form:j_idt93:11:j_idt95" href="#"
+                                                                  class="ui-commandlink ui-widget layout-config-option"
+                                                                  onclick="PrimeFaces.ab({s: & quot; config - form:j_idt93:11:j_idt95 & quot; , f: & quot; config - form & quot; , p: & quot; config - form:j_idt93:11:j_idt95 & quot; , u: & quot; config - form & quot; , onst:function(cfg){PrimeFaces.PoseidonConfigurator.beforeResourceChange(); }, onco:function(xhr, status, args, data){PrimeFaces.PoseidonConfigurator.changeComponentsTheme('cyan', 'light'); }}); return false;">
+                                        <span class="layout-config-option-color" style="background-color: #399DB2;"
+                                              title="Cyan"></span></a>
+                                </div>-->
+                            </div>
+                        </div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:3"
+                                     value="-7500027867546551808:-5124627841032148127" autocomplete="off" />
+                    </form>
+                </div>
+            </div>
+
+            <div class="layout-main">
+
+                <div class="layout-breadcrumb">
+                    <div class="breadcrumb">
+                        <div class="route-bar-breadcrumb">
+                            <li>PAGES</li>
+                            <li><i class="pi pi-chevron-right"></i></li>
+                            <li><a href="empty.html" class="ui-link ui-widget">EMPTY</a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-content">
+                    <div class="p-grid">
+                        <div class="p-col">
+                            <ui:insert name="content"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="layout-footer"><a id="footerlogolink" name="footerlogolink" href="dashboard.html"><img
+                            id="j_idt113" src="#{request.contextPath}/faces/resources/images/logo-poseidon.png"
+                            alt="" /></a>
+                    <div class="social-icons">
+                        <a><i class="pi pi-github"></i></a>
+                        <a><i class="pi pi-facebook"></i></a>
+                        <a><i class="pi pi-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="layout-mask modal-in"></div>
+        </div>
+        <div id="j_idt116" class="layout-ajax-loader">
+            <div id="j_idt116_start" style="display:none">
+                <i class="pi pi-spin pi-spinner layout-ajax-loader-icon" aria-hidden="true"></i>
+            </div>
+            <div id="j_idt116_complete" style="display:none"></div>
+        </div>
+        <script id="j_idt116_s"
+        type="text/javascript">$(function () { PrimeFaces.cw("AjaxStatus", "widget_j_idt116", { id: "j_idt116", delay: 0 }); });</script>
+
+    </h:body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:fn="http://java.sun.com/jsp/jstl/functions">
+
+
+    <h:head>
+        <f:facet name="first">
+            <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+
+            <title>PrimeFaces</title>
+        </f:facet>
+        <f:event listener="#{clienteC.listar()}" type="preRenderView" />
+
+    </h:head>
+
+    <h:body>
+        <center> 
+            <h1 style="color:black; font-weight:bold; font-size:40px">REGISTRO DE CLIENTES</h1>
+        </center>   
+        <p:growl id="mensaje" showDetail="true" />
+        <center>
+            <h:form id="form">      
+                <p:panelGrid columns="2"> 
+                    <p:outputLabel value="DNI" /> 
+                    <p:inputText value="#{clienteC.cliente.DNICLI}" maxlength="8" >
+                        <p:keyFilter regEx="/[0-8]/" />
+                    </p:inputText>   
+
+                    <p:outputLabel value="Nombre" />
+                    <p:inputText value="#{clienteC.cliente.NOMCLI}" maxlength="30">
+                        <p:keyFilter regEx="/[A-Z_a-z_ñ_á_é_í_ó_ú_ ]/"/>
+                    </p:inputText>
+
+                    <p:outputLabel value="Apellido" />
+                    <p:inputText  value="#{clienteC.cliente.APECLI}" maxlength="30">
+                        <p:keyFilter regEx="/[A-Z_a-z_ñ_á_é_í_ó_ú_ ]/"/>
+                    </p:inputText>
+
+                    <p:commandButton value="Registrar" actionListener="#{clienteC.registrar()}" update=":form1:tablaCli form mensaje"/>
+
+                </p:panelGrid> 
+            </h:form>
+        </center>
+
+
+        <h:form id="form1">
+            <center> 
+                <p:dataTable var="tblcli" id="tablaCli" value="#{clienteC.listadoClientes}" rows="10" 
+                             paginator="true"
+                             paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                             currentPageReportTemplate="{startRecord}-{endRecord} of {totalRecords} records"
+                             rowsPerPageTemplate="5,10,{ShowAll|'All'}" 
+                             rowStyleClass="registroVinculado"
+                             style="width:75%; border-style:none;">
+
+                    <f:facet name= "header">
+                        <center style="color:black; font-weight:bold; font-size:20px"> 
+                            LISTADO DEL CLIENTE 
+                        </center>
+                    </f:facet> 
+
+                    <p:column headerText="DNI:">
+                        <h:outputText value="#{tblcli.DNICLI}" />
+                    </p:column>
+
+                    <p:column headerText="NOMBRES:">
+                        <h:outputText value="#{tblcli.NOMCLI}" />
+                    </p:column>
+
+                    <p:column headerText="APELLIDOS">
+                        <h:outputText value="#{tblcli.APECLI}" />
+                    </p:column>
+
+                    <f:facet name="footer">  
+                        <center style="color:black; font-weight:bold; font-size:20px"> 
+                            EN TOTAL HAY  #{fn:length(clienteC.listadoClientes)} REGISTROS. 
+                        </center>  
+                    </f:facet>   
+
+                </p:dataTable> 
+            </center>
+
+        </h:form>
+
+    </h:body>
+
+</html>
