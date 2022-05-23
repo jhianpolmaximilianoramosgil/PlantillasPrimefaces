@@ -34,3 +34,4 @@ Este repositorio almacena la Implementación de plantilla con Primefaces
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:p="http://primefaces.org/ui"
       xmlns:fn="http://java.sun.com/jsp/jstl/functions">                       
+** 
