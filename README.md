@@ -14,14 +14,6 @@ Este repositorio almacena la Implementación de plantilla con Primefaces
 # Referencias
 [Video de referencia](https://www.youtube.com/watch?v=MrrIwFc36r4&t=237s)
 
-**xhtml**
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:p="http://primefaces.org/ui"
-      xmlns:fn="http://java.sun.com/jsp/jstl/functions">  
   
 **ui:composition**
 <?xml version='1.0' encoding='UTF-8' ?>
